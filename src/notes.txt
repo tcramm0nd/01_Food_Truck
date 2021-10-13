@@ -1,0 +1,12 @@
+TODO
+    DATA:
+        [] name
+        [] image
+        [] location (address)
+            [] write a script to convert address to coordinates?
+        [] hours
+        [] rating
+        LESS IMPORTANT NOW:
+            [] menu
+            [] BOOKEM
+            

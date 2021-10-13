@@ -1,0 +1,25 @@
+
+{
+    "features": [
+        {
+            "lat": 40.462580,
+            "long": -79.950330,
+            "name": "Thyme Machine"
+        },
+        {
+            "lat": 40.464120,
+            "long": -79.953330,
+            "name": "Trace Brewing"
+        },
+        {
+            "lat": 40.466940,
+            "long": -79.965530,
+            "name": "11th Hour Brewing"
+        },
+        {
+            "lat": 40.451100,
+            "long": -80.005170,
+            "name": "Commonplace Coffee"
+        }
+    ]
+}
