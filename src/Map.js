@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import MapGl, { Marker } from 'react-map-gl';
+import Menu from './Menu'
+import NavBar from './NavBar'
 import RoomIcon from '@material-ui/icons/Room.js';
 import * as truckData from './TruckData.json'
 
@@ -17,14 +19,15 @@ export default function Map() {
 
     return (
         <div>
+            <NavBar />
             <MapGl 
-                width="75vw"
+                width="100vw"
                 {...viewPort}
                 mapStyle="mapbox://styles/mapbox/streets-v8"
                 onViewportChange={setViewPort}
                 mapboxApiAccessToken={MAP_TOKEN}>
                 <div>
-                    {truckData.features.map((truckData, index) => (
+                    {truckData.trucks.map((truckData, index) => (
                         <Marker key={index}
                             latitude={truckData.lat} 
                             longitude={truckData.long} 
@@ -36,6 +39,9 @@ export default function Map() {
                     ))}
                 </div>
             </MapGl>
+            <Menu>
+
+            </Menu>
         </div>
     )
 }
