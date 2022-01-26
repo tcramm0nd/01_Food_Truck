@@ -5,7 +5,7 @@ import Pop from './Popup'
 import RoomIcon from '@material-ui/icons/Room.js';
 import * as truckData from './TruckData.json'
 
-const MAP_TOKEN = 'pk.eyJ1IjoiY29ybWFjZ2FydGxhbmQiLCJhIjoiY2t1ZjBxYTk5MXB2aDJ1bzhvOXA4dHAybyJ9.-_ZlY_g0JfjDIMiJmQomeA'
+const MAP_TOKEN = '' //ente API token here
 
 export default function Map() {
 
