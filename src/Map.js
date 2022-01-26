@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import MapGl, { Marker } from 'react-map-gl';
-import Menu from './Menu'
+import MapGl, { Marker, Popup } from 'react-map-gl';
 import NavBar from './NavBar'
+import Pop from './Popup'
 import RoomIcon from '@material-ui/icons/Room.js';
 import * as truckData from './TruckData.json'
 
@@ -13,7 +13,7 @@ export default function Map() {
         latitude: 40.440624,
         longitude: -79.995888,
         zoom: 13,
-        // width: window.innerWidth,
+        width: window.innerWidth,
         height: window.innerHeight,
     });
 
@@ -35,13 +35,13 @@ export default function Map() {
                             offsetTop={-5}>
                                 <RoomIcon>
                                 </RoomIcon>
+                                {/* <Pop>
+                                    <p>{truckData.truckName}</p>
+                                </Pop> */}
                         </Marker>
                     ))}
                 </div>
             </MapGl>
-            <Menu>
-
-            </Menu>
         </div>
     )
 }
