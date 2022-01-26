@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import MapGl, { Marker, Popup } from 'react-map-gl';
 import NavBar from './NavBar'
-import Pop from './Popup'
+//import Popup from './Pop'
 import RoomIcon from '@material-ui/icons/Room.js';
 import * as truckData from './TruckData.json'
+import { Typography } from '@material-ui/core';
 
-const MAP_TOKEN = '' //ente API token here
+const MAP_TOKEN = '' // API TOKEN 
 
 export default function Map() {
 
@@ -16,12 +17,16 @@ export default function Map() {
         width: window.innerWidth,
         height: window.innerHeight,
     });
+    
+
+    const [popupInfo, setPopupInfo] = useState(null);
 
     return (
         <div>
             <NavBar />
             <MapGl 
                 width="100vw"
+                height="100vh"
                 {...viewPort}
                 mapStyle="mapbox://styles/mapbox/streets-v8"
                 onViewportChange={setViewPort}
@@ -30,14 +35,11 @@ export default function Map() {
                     {truckData.trucks.map((truckData, index) => (
                         <Marker key={index}
                             latitude={truckData.lat} 
-                            longitude={truckData.long} 
+                            longitude={truckData.long}
+                            truckName={truckData.truckName} 
                             offset={(-viewPort.zoom * 3) / 2} 
                             offsetTop={-5}>
-                                <RoomIcon>
-                                </RoomIcon>
-                                {/* <Pop>
-                                    <p>{truckData.truckName}</p>
-                                </Pop> */}
+                            <RoomIcon />                              
                         </Marker>
                     ))}
                 </div>

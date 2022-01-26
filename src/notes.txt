@@ -1,12 +1,10 @@
 TODO
     DATA:
-        [] name
         [] image
-        [] location (address)
-            [] write a script to convert address to coordinates?
+        [] truck name
+        [] address
         [] hours
-        [] rating
-        LESS IMPORTANT NOW:
-            [] menu
-            [] BOOKEM
+        [] buisiness in front of
+        
+
             

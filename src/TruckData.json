@@ -1,25 +1,52 @@
-
 {
     "trucks": [
         {
             "lat": 40.462580,
             "long": -79.950330,
-            "name": "Thyme Machine"
+            "truckName": "Thyme Machine",
+            "location": "Bitterends Luncheonette"
         },
         {
             "lat": 40.464120,
             "long": -79.953330,
-            "name": "Trace Brewing"
+            "truckName": "Stunt Pig",
+            "location": "Trace Brewing"
         },
         {
             "lat": 40.466940,
             "long": -79.965530,
-            "name": "11th Hour Brewing"
+            "truckName": "Blue Sparrow",
+            "location": "11th Hour Brewing"
         },
         {
             "lat": 40.451100,
             "long": -80.005170,
-            "name": "Commonplace Coffee"
+            "truckName": "PGH Tortas",
+            "location": "Commonplace Coffee"
+        },
+        {
+            "lat": 40.444019,
+            "long": -79.953590,
+            "truckName": "Haskell's Deli",
+            "location": "Pitt Campus"
+        },
+        {
+            "lat": 40.477210,
+            "long": -79.956940,
+            "truckName": "La Palapa",
+            "location": "Roundabout Brewery"
+        },
+        {
+            "lat": 40.466091,
+            "long": -79.965042,
+            "truckName": "The Boonseek",
+            "location": "Esspresso a Mano"
+        },
+        {
+            "lat": 40.478840,
+            "long": -79.967830,
+            "truckName": "PGH Sandwich Society",
+            "location": "Strange Roots"
         }
     ]
 }
